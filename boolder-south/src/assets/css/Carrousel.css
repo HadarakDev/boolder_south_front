@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  justify-content: space-around; /* Adjust to space-between if you want more space between cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if there is not enough space */
+}
+
+.AreasContainer {
+  background-color: #F3F4F6;
+  padding: 48px;
+}
+
+.cardTitle {
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  color: #000000 !important;
+}
+
+.cardDescription {
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #6b7280 !important;
+  text-decoration: none !important
+
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover .cardTitle {
+  background-color: rgb(224, 228, 228);
+}
+
+.link:hover .cardDescription {
+  background-color:rgb(224, 228, 228);
+}

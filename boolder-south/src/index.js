@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import "./assets/css/Banner.css"
 import "./assets/css/MenuBar.css"
+import "./assets/css/LinkTable.css"
+import "./assets/css/Carrousel.css"
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

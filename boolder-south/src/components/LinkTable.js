@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
 function LinkTable() {
   const [areas, setAreas] = useState([]);
@@ -21,24 +21,30 @@ function LinkTable() {
   }, []);
 
   return (
-    <Container maxWidth="lg">
-    <TableContainer component={Paper}>
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>Area Name</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {areas.map((area) => (
-            <TableRow key={area.id} component={Link} to={`/area/${area.name_searchable}`}>
-              <TableCell>{area.name}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-    </Container>
+    <div className="LinkTableContainer">
+
+      <Container maxWidth="lg" disableGutters>
+      <Typography variant="h4" className='LinkTitle'>
+          Areas
+        </Typography>
+        <TableContainer component={Paper}>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Area Name</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {areas.map((area) => (
+                <TableRow key={area.id} component={Link} to={`/area/${area.name_searchable}`}>
+                  <TableCell>{area.name}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Container>
+    </div>
   );
 }
 

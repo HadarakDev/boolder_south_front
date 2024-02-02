@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Banner from '../components/Banner';
 import LinkTable  from '../components/LinkTable';
+import CarrouselAreas  from '../components/Carrousel';
 const Home = () => {
   const [areas, setAreas] = useState([]);
 
@@ -22,7 +23,8 @@ const Home = () => {
   return (
     <div>
         <Banner></Banner>
-        <LinkTable></LinkTable>
+        {/* <LinkTable></LinkTable> */}
+        <CarrouselAreas></CarrouselAreas>
     </div>
   );
 };

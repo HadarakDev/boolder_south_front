@@ -29,9 +29,7 @@ import Boulder from './pages/Boulder';
 const App = () => {
     return (
       <Router>
-        
-            
-          <MenuBar />
+          {/* <MenuBar /> */}
           
           <Routes>
             <Route path="/" element={<Home />} />
