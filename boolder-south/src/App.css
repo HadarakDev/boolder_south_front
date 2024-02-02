@@ -1,3 +1,10 @@
+
+.container {
+    margin:0 auto; /* this will center the page */
+    width:500px; /*  use your width here */
+ }
+
+
 .App {
   text-align: center;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import "./assets/css/Banner.css"
+import "./assets/css/MenuBar.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
