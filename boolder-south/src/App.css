@@ -4,13 +4,6 @@
     width:500px; /*  use your width here */
  }
 
-
-.App {
-  text-align: center;
-  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
-
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

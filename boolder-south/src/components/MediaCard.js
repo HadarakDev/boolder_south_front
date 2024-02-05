@@ -11,11 +11,11 @@ export default function MediaCard({ title, description, imageUrl, linkTo }) {
         image={imageUrl}
         title={title}
       />
-      <CardContent className='cardTitle'>
+      <CardContent className='card-title'>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography  className='cardDescription' variant="body2" color="text.secondary">
+        <Typography  className='card-description' variant="body2" color="text.secondary">
           {description}
         </Typography>
       </CardContent>

@@ -6,12 +6,12 @@ import logo from "../assets/images/cote_keblo.jpg"
 function MenuBar() {
   return (
     <Container maxWidth="lg" disableGutters >
-      <AppBar position="static" style={{ color: "#6b7280", backgroundColor: '#FFFFFF', border: 'none', boxShadow: 'none' }}>
+      <AppBar position="static" style={{ color: "#6b7280", backgroundColor: '#FFFFFF', boxShadow: 'none' }}>
         <Toolbar >
           <img
             src={logo}
             alt="Your App Logo"
-            style={{ marginRight: '10px', height: '40px', width: 'auto' }}
+            style={{ marginRight: '10px', height: '30px', width: 'auto' }}
           />
           <Typography variant="h6" component="div">
             Boolder South

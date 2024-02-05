@@ -23,7 +23,7 @@ function CarrouselAreas() {
   }, []);
 
   return (
-    <div className="AreasContainer">
+    <div className="areas-container">
 
       <Container maxWidth="lg" disableGutters>
 
@@ -33,7 +33,7 @@ function CarrouselAreas() {
               linkTo={`/area/${area.name_searchable}`}
               key={area.id}
               title={area.name}
-              description={`Description for ${area.name}`}
+              description={`Description: ${area.description_en}`}
               imageUrl={`assets/${area.name_searchable}.png`} // Replace with the path to your area images
             />
           ))}

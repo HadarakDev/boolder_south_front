@@ -1,15 +1,12 @@
 
-.BannerContainer {
-}
-
-.BannerTitle {
+.banner-title {
 	font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
   font-weight: 800 !important;
   font-size: 60px !important;
   line-height: 60px !important;
    
 }
-.BannerSubTitle {
+.banner-sub-title {
   font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
   font-weight: 400 !important;
   font-size: 20px !important;
@@ -17,23 +14,9 @@
 
 }
 
-.centeredVertically {
+.centered-vertically {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%; /* Set height to 100% to fill the entire height of the parent Grid item */
 }
-
-/* .imgDiag {
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  
-    transform: var(--tw-transform);
-  } */
-  
