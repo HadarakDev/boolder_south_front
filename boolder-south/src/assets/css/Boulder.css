@@ -1,0 +1,17 @@
+.boulder-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boulder-row:hover {
+ background: #FFFFFF;
+}
+
+.boulder-column {
+  flex: 1;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography } from '@mui/material';
 
-const OverlapMediaCard = ({ imagePath, altText, text }) => {
+const OverlapMediaCard = ({ title, altText, text }) => {
   const cardStyle = {
     position: 'relative',
     height: '400px', // Set the desired height
@@ -27,7 +27,7 @@ const OverlapMediaCard = ({ imagePath, altText, text }) => {
     <Card style={cardStyle}>
       <img src={"../assets/le-prieure.png"} alt={altText} style={imageStyle} />
       <CardContent style={textOverlayStyle}>
-        <Typography className="media-card-title" variant="h5">LE PRIEURE</Typography>
+        <Typography className="media-card-title" variant="h5">{title.toUpperCase()}</Typography>
       </CardContent>
     </Card>
   );

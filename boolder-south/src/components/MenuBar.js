@@ -5,6 +5,7 @@ import logo from "../assets/images/cote_keblo.jpg"
 
 function MenuBar() {
   return (
+    <div className='menu-bar-background'>
     <Container maxWidth="lg" disableGutters >
       <AppBar position="static" style={{ color: "#6b7280", backgroundColor: '#FFFFFF', boxShadow: 'none' }}>
         <Toolbar >
@@ -20,7 +21,9 @@ function MenuBar() {
         </Toolbar>
       </AppBar>
     </Container>
+    </div>
   );
+  
 }
 
 export default MenuBar;

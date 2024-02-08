@@ -33,7 +33,7 @@ function CarrouselAreas() {
               linkTo={`/area/${area.name_searchable}`}
               key={area.id}
               title={area.name}
-              description={`Description: ${area.description_en}`}
+              description={`${area.description_en}`}
               imageUrl={`assets/${area.name_searchable}.png`} // Replace with the path to your area images
             />
           ))}

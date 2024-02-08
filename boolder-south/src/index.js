@@ -5,6 +5,8 @@ import "./assets/css/Banner.css"
 import "./assets/css/MenuBar.css"
 import "./assets/css/LinkTable.css"
 import "./assets/css/Carrousel.css"
+import "./assets/css/Area.css"
+import "./assets/css/Boulder.css"
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

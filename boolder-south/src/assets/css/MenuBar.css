@@ -2,3 +2,8 @@
   background-color: #FFFFFF !important;
 
 }
+
+.menu-bar-background {
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

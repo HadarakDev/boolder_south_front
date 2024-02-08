@@ -6,7 +6,7 @@ import logo from "../assets/images/naviteau_h.png"
 
 function Banner() {
   return (
-
+    <div className='menu-bar-background'>
     <Container maxWidth="lg" disableGutters className='banner-container'>
       <Grid container spacing={2}>
       <Grid  item xs={6} >
@@ -26,6 +26,7 @@ function Banner() {
         </Grid>
       </Grid>
     </Container>
+    </div>
   );
 }
 
