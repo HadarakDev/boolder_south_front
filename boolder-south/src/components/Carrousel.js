@@ -1,8 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, Card, CardContent, CardMedia } from '@mui/material';
 import MediaCard  from './MediaCard';
 // import img from "../assets/images/naviteau.png"
+
+
+
+
+const cardStyle = {
+  position: 'relative',
+  height: '200px', // Set the desired height
+  width: "300px"
+};
+
+const imageStyle = {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+};
+
+const textOverlayStyle = {
+  position: 'absolute',
+  fontSize: "14px",
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  textAlign: 'center',
+  color: 'white', // Set the text color
+  fontWeight: "400" 
+};
+
+
+
 
 function CarrouselAreas() {
   const [areas, setAreas] = useState([]);
@@ -29,13 +58,21 @@ function CarrouselAreas() {
 
         <div className='card-container'>
           {areas.map((area) => (
-            <MediaCard
-              linkTo={`/area/${area.name_searchable}`}
-              key={area.id}
-              title={area.name}
-              description={`${area.description_en}`}
-              imageUrl={`assets/${area.name_searchable}.png`} // Replace with the path to your area images
-            />
+            <Link className="link" to={`/area/${area.name_searchable}`}>
+              <Card style={cardStyle}>
+                <img src={`assets/${area.name_searchable}.png`} alt={area.name} style={imageStyle} />
+                <CardContent style={textOverlayStyle}>
+                  <Typography className="media-card-title-small" variant="h5">{area.name.toUpperCase()}</Typography>
+                </CardContent>
+              </Card>
+              </Link>
+            // <MediaCard
+            //   linkTo={`/area/${area.name_searchable}`}
+            //   key={area.id}
+            //   title={area.name}
+            //   description={`${area.description_en}`}
+            //   imageUrl={`assets/${area.name_searchable}.png`} // Replace with the path to your area images
+            // />
           ))}
         </div>
 

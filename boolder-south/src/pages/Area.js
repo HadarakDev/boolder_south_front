@@ -72,7 +72,7 @@ const Area = () => {
     <Container maxWidth="lg" disableGutters>
       {area && (
         <>
-          <OverlapMediaCard title={area.name} />
+          <OverlapMediaCard img={`../assets/${area.name_searchable}.png`} title={area.name} />
           {/* <h1>{area.name}</h1> */}
           <div className='area-description'>{area.description_en}</div>
           <h3>Boulders of {area.name}</h3>
@@ -93,7 +93,10 @@ const Area = () => {
               <p>{problem.grade}</p>
             </div>
             <div className="boulder-column">
-              <p>{problem.subarea}</p>
+              <p>{problem.sub_area_name}</p>
+            </div>
+            <div className="boulder-column">
+              <p>{problem.circuit_color}</p>
             </div>
           </div>
         </Link>

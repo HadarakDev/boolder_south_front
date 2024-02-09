@@ -5,6 +5,13 @@
   line-height: 60px !important;
 }
 
+.media-card-title-small {
+  font-weight: 800 !important;
+  font-size: 30px !important;
+  line-height: 40px !important;
+}
+
+
 .card-container {
   display: flex;
   justify-content: space-around; /* Adjust to space-between if you want more space between cards */
@@ -19,7 +26,7 @@
 .card-title {
   font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
   font-weight: 400 !important;
-  font-size: 20px !important;
+  font-size: 10px !important;
   color: #000000 !important;
 }
 
