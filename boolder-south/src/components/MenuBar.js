@@ -18,12 +18,13 @@ function MenuBar() {
             />
             </Link>
             <Typography variant="h6" component="div">
-              Boolder South
+              SouthCrag
             </Typography>
-
-            <Typography variant="h6" component="div">
-              About
-            </Typography>
+            <Link className="link" to={`/about`} >
+              <Typography className="menu-bar-item" variant="h6" component="div">
+                About
+              </Typography>
+            </Link>
             {/* Add other AppBar components, buttons, etc. as needed */}
           </Toolbar>
         </AppBar>
