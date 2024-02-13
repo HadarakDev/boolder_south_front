@@ -3,6 +3,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuBar from './components/MenuBar';
+import MenuBarFooter from './components/MenuBarFooter';
 import Home from './pages/Home';
 import Area from './pages/Area';
 import Boulder from './pages/Boulder';
@@ -20,7 +21,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             {/* Add more routes as needed */}
           </Routes>
-
+          <MenuBarFooter />
       </Router>
     );
   };

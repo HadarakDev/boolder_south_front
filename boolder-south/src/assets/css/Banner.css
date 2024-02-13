@@ -1,6 +1,15 @@
 .banner-background{
   background-color: #FFFFFF;
+
+  border-bottom: 1px solid #cfd5df;
 }
+
+.banner-container img {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
 
 .banner-title {
 	font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 

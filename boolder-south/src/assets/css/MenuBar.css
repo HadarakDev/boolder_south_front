@@ -1,3 +1,28 @@
+.footer-bar-background {
+  width: 100%; /* Set your desired background color */
+  color: #ffffff; /* Set your desired text color */
+  padding: 10px; /* Adjust padding as needed */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #cfd5df;
+  z-index: 1000; 
+  background: #FFFFFF
+}
+
+.footer-app-bar {
+  background: #FFFFFF !important;
+  color: "#6b7280";
+  top: 'auto';
+  bottom: 0 ;
+  box-shadow: None !important
+}
+
+.footer-bar-item {
+  color: #bfc4cd;
+  padding-left: 20px;
+
+}
 
 .menu-bar-background {
   background-color: #ffffff;
