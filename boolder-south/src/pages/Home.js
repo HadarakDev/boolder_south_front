@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div>
-        <Banner></Banner>
+        <Banner title_start={"Bouldering in"} title_end={"South of France"}></Banner>
         {/* <LinkTable></LinkTable> */}
         <CarrouselAreas></CarrouselAreas>
     </div>

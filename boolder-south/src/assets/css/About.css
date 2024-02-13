@@ -1,0 +1,8 @@
+.about-title {
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}

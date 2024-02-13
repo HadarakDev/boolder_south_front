@@ -7,6 +7,7 @@ import "./assets/css/LinkTable.css"
 import "./assets/css/Carrousel.css"
 import "./assets/css/Area.css"
 import "./assets/css/Boulder.css"
+import "./assets/css/About.css"
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
