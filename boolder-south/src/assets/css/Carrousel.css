@@ -1,4 +1,12 @@
 
+.areas-container {
+  
+  background-color: #F3F4F6;
+  padding: 48px;
+}
+
+
+
 .media-card-title {
   font-weight: 800 !important;
   font-size: 40px !important;
@@ -11,6 +19,9 @@
   line-height: 40px !important;
 }
 
+.media-card-title-small:hover{
+  color:#bfc4cd;
+}
 
 .card-container {
   display: flex;
@@ -18,35 +29,14 @@
   flex-wrap: wrap; /* Allow cards to wrap to the next line if there is not enough space */
 }
 
-.areas-container {
-  background-color: #F3F4F6;
-  padding: 48px;
-}
-
-.card-title {
-  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
-  font-weight: 400 !important;
-  font-size: 10px !important;
-  color: #000000 !important;
-}
-
-.card-description {
-  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; 
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  color: #6b7280 !important;
-  text-decoration: none !important
-
-}
-
 .link {
   text-decoration: none;
 }
 
-.link:hover .cardTitle {
+/* .link:hover .cardTitle {
   background-color: rgb(224, 228, 228);
 }
 
 .link:hover .cardDescription {
-  background-color:rgb(224, 228, 228);
-}
+  background-color:rgb(16, 62, 62);
+} */

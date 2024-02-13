@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
   return (
-    <div>
+    <div className='about-background'>
       <Banner title_start={"About"} title_end={"SouthCrag"}></Banner>
       <Container maxWidth="lg" disableGutters>
       

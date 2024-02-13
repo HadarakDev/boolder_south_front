@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Typography, Card, CardContent, CardMedia } from '@mui/material';
-import MediaCard  from './MediaCard';
 // import img from "../assets/images/naviteau.png"
 
 
@@ -9,8 +8,9 @@ import MediaCard  from './MediaCard';
 
 const cardStyle = {
   position: 'relative',
-  height: '200px', // Set the desired height
-  width: "300px"
+  height: '300px', // Set the desired height
+  width: "250px",
+  marginLeft: '10px'
 };
 
 const imageStyle = {
@@ -29,9 +29,6 @@ const textOverlayStyle = {
   color: 'white', // Set the text color
   fontWeight: "400" 
 };
-
-
-
 
 function CarrouselAreas() {
   const [areas, setAreas] = useState([]);
@@ -66,13 +63,6 @@ function CarrouselAreas() {
                 </CardContent>
               </Card>
               </Link>
-            // <MediaCard
-            //   linkTo={`/area/${area.name_searchable}`}
-            //   key={area.id}
-            //   title={area.name}
-            //   description={`${area.description_en}`}
-            //   imageUrl={`assets/${area.name_searchable}.png`} // Replace with the path to your area images
-            // />
           ))}
         </div>
 

@@ -18,6 +18,10 @@
   box-shadow: None !important
 }
 
+.footer-bar-item:hover {
+  color: #C56844;
+}
+
 .footer-bar-item {
   color: #bfc4cd;
   padding-left: 20px;

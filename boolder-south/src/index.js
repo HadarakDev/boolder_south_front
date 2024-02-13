@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import "./assets/css/Banner.css"
 import "./assets/css/MenuBar.css"
-import "./assets/css/LinkTable.css"
+
 import "./assets/css/Carrousel.css"
 import "./assets/css/Area.css"
 import "./assets/css/Boulder.css"

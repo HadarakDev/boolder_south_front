@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import OverlapMediaCard from '../components/OverlapMediaCard';
 import grades_order from "../data/grade.json";
@@ -73,37 +73,45 @@ const Area = () => {
       {area && (
         <>
           <OverlapMediaCard img={`../assets/${area.name_searchable}.png`} title={area.name} />
-          {/* <h1>{area.name}</h1> */}
           <div className='area-description'>{area.description_en}</div>
-          <h3>Boulders of {area.name}</h3>
-          <div>
-  {Object.keys(groupedProblems).map((grade) => (
-    <div className="grade-header" key={grade}>
-      <h4>{`${grade}`}</h4>
-      {groupedProblems[grade].map((problem) => (
-        <Link className="link" to={`/boulder/${problem.name_searchable}`} key={problem.id}>
-          <div className="boulder-row">
-            <div className="boulder-column">
-              <p>{problem.name}</p>
-            </div>
-            <div className="boulder-column">
-              <p>{problem.description}</p>
-            </div>
-            <div className="boulder-column">
-              <p>{problem.grade}</p>
-            </div>
-            <div className="boulder-column">
-              <p>{problem.sub_area_name}</p>
-            </div>
-            <div className="boulder-column">
-              <p>{problem.circuit_color}</p>
-            </div>
-          </div>
-        </Link>
-      ))}
-    </div>
-  ))}
-</div>
+            <Typography className="about-title" component="div">
+              Localisation
+            </Typography>
+            <Typography className="about-title" component="div">
+              Boulders of {area.name}
+            </Typography>
+          <div className='boulders-table'>
+            {Object.keys(groupedProblems).map((grade) => (
+              <div className="grade-header" key={grade}>
+                <h4>{`${grade}`}</h4>
+                {groupedProblems[grade].map((problem) => (
+                  <Link
+                  className="link"
+                  to={`/boulder/${problem.name_searchable}/${problem.id}`}
+                  key={problem.id}
+                >
+                    <div className="boulder-row">
+                      <div className="boulder-column">
+                        <p>{problem.name}</p>
+                      </div>
+                      <div className="boulder-column">
+                        <p>{problem.description}</p>
+                      </div>
+                      <div className="boulder-column">
+                        <p>{problem.grade}</p>
+                      </div>
+                      <div className="boulder-column">
+                        <p>{problem.sub_area_name}</p>
+                      </div>
+                      <div className="boulder-column">
+                        <p>{problem.circuit_color}</p>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+          ))}
+        </div>
         </>
       )}
     </Container>

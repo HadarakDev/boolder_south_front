@@ -8,9 +8,11 @@ function MenuBarFooter() {
       <Container maxWidth="lg" disableGutters>
         <AppBar position="static" className='footer-app-bar'>
           <Toolbar>
+          <Link className="link" to={`/`} >
             <Typography className="footer-bar-item" component="div">
               SouthCrag
             </Typography>
+            </Link>
             <Link className="link" to={`/about`} >
               <Typography className="footer-bar-item"  component="div">
                 About
