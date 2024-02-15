@@ -15,7 +15,7 @@ function Banner({title_start, title_end}) {
                 {title_start} <div style={{color: "#D3613A"}}>{title_end}</div>
               </Typography>
               <Typography variant="body1" className='banner-sub-title' >
-                Discover thousands of problems & circuits for all levels.
+                Discover problems & circuits for all levels.
               </Typography>
             </div>
           </Grid>

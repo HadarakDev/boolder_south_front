@@ -23,3 +23,23 @@
 .boulders-table {
   margin-bottom:100px
 }
+
+.boulder-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding-left: 10px
+}
+
+.boulder-row:hover {
+ background: #FFFFFF;
+}
+
+.boulder-column {
+  flex: 1;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+}

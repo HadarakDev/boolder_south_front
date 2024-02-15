@@ -1,17 +1,15 @@
-.boulder-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.boulder-description {
+  margin-top: 20px !important;
+  margin-bottom: 150px !important;
 }
 
-.boulder-row:hover {
- background: #FFFFFF;
+.boulder-box {
+  max-width: 800px;
+  
 }
 
-.boulder-column {
-  flex: 1;
-  box-sizing: border-box;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 400;
+.boulder-grade {
+  float: right;
+  color: rgb(107, 114, 128)
 }

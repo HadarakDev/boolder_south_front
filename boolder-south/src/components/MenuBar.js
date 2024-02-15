@@ -17,12 +17,17 @@ function MenuBar() {
               style={{ marginRight: '10px', height: '30px', width: 'auto' }}
             />
             </Link>
-            <Typography variant="h6" component="div">
+            <Typography  component="div">
               SouthCrag
             </Typography>
             <Link className="link" to={`/about`} >
-              <Typography className="menu-bar-item" variant="h6" component="div">
+              <Typography className="menu-bar-item"  component="div">
                 About
+              </Typography>
+            </Link>
+            <Link className="link" to={`/map`} >
+              <Typography className="menu-bar-item"  component="div">
+                Map
               </Typography>
             </Link>
             {/* Add other AppBar components, buttons, etc. as needed */}

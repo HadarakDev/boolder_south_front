@@ -11,17 +11,20 @@
   font-weight: 800 !important;
   font-size: 40px !important;
   line-height: 60px !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .media-card-title-small {
   font-weight: 800 !important;
   font-size: 25px !important;
   line-height: 40px !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
-.media-card-title-small:hover{
+/* .media-card-title-small:hover{
   color:#bfc4cd;
-}
+} */
 
 .card-container {
   display: flex;

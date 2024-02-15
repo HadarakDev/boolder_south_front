@@ -34,5 +34,10 @@
 }
 
 .menu-bar-item {
+  color: rgb(107, 114, 128);
   padding-left: 20px;
+}
+
+.menu-bar-item:hover {
+  color: #C56844;
 }

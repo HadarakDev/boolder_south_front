@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Area from './pages/Area';
 import Boulder from './pages/Boulder';
 import About from './pages/About';
+import Map from './pages/Map';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/area/:id" element={<Area />} />
             <Route path="/boulder/:name_searchable/:id" element={<Boulder />} />
             <Route path="/about" element={<About />} />
+            <Route path="/map" element={<Map />} />
             {/* Add more routes as needed */}
           </Routes>
           <MenuBarFooter />
