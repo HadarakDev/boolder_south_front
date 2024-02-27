@@ -43,3 +43,22 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+
+.circle {
+    width: 25px;  
+    height: 25px; 
+    border-radius: 50%; 
+    margin: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.circle-text {
+  color:#FFFFFF;
+  z-index: 1000;
+  font-size: 16px;
+  font-weight: 400;
+}

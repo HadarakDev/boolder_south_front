@@ -4,7 +4,7 @@ import { Container, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import OverlapMediaCard from '../components/OverlapMediaCard';
 import grades_order from "../data/grade.json";
-import Grid from '@mui/material/Grid';
+
 const groupProblemsByGrade = (problems) => {
   return problems.reduce((acc, problem) => {
     const grade = problem.grade;
@@ -12,27 +12,27 @@ const groupProblemsByGrade = (problems) => {
       acc[grade] = [];
     }
     acc[grade].push(problem);
-    
-    return acc;
+    const sortedGrades = Object.keys(acc).sort((a, b) => grades_order[a] - grades_order[b]);
+
+    // Create a new object with sorted grades
+    const sortedGroupedProblems = {};
+    sortedGrades.forEach((grade) => {
+      sortedGroupedProblems[grade] = acc[grade];
+    });
+    console.log(sortedGroupedProblems)
+    return sortedGroupedProblems;
   }, {});
 };
 
-
-const sortObjectKeys = (obj, customSortingOrder) => {
-  const sortedKeys = Object.keys(obj).sort(customSortingOrder);
-  const sortedObject = sortedKeys.reduce((acc, key) => {
-    acc[key] = obj[key];
-    return acc;
-  }, {});
-  return sortedObject;
+const CircleComponent = ({ problem }) => {
+  return (
+    <div className="circle" style={{ backgroundColor: problem.circuit_color }}>
+     <p className="circle-text">{problem.circuit_number}</p>
+    </div>
+  );
 };
-
-// Add the rest of the grades in the desired order
-
-
 const Area = () => {
   const [area, setArea] = useState(null);
-  const [problems, setProblems] = useState([]);
   const [groupedProblems, setGroupedProblems] = useState({});
   const { id } = useParams();
 
@@ -51,7 +51,7 @@ const Area = () => {
         const problemsData = await problemsResponse.json();
 
         setArea(areaData);
-        setProblems(problemsData);
+        // setProblems(problemsData);
 
         const groupedProblemsData = groupProblemsByGrade(problemsData);
         setGroupedProblems(groupedProblemsData);
@@ -61,7 +61,6 @@ const Area = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
         setArea(null);
-        setProblems([]);
       }
     };
 
@@ -104,7 +103,7 @@ const Area = () => {
                         <p>{problem.sub_area_name}</p>
                       </div>
                       <div className="boulder-column">
-                        <p>{problem.circuit_color}</p>
+                        <CircleComponent problem={problem} />
                       </div>
                     </div>
                   </Link>
