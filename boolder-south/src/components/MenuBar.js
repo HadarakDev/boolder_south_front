@@ -22,7 +22,7 @@ function MenuBar() {
             </Typography>
             <Link className="link" to={`/about`} >
               <Typography className="menu-bar-item"  component="div">
-                About
+              À Propos
               </Typography>
             </Link>
             <Link className="link" to={`/map`} >

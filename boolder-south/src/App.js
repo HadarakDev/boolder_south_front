@@ -18,7 +18,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/area/:id" element={<Area />} />
-            <Route path="/boulder/:name_searchable/:id" element={<Boulder />} />
+            <Route path="/:area_name_searchable/:name_searchable/:id" element={<Boulder />} />
             <Route path="/about" element={<About />} />
             <Route path="/map" element={<Map />} />
             {/* Add more routes as needed */}

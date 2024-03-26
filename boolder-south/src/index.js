@@ -8,7 +8,7 @@ import "./assets/css/Carrousel.css"
 import "./assets/css/Area.css"
 import "./assets/css/Boulder.css"
 import "./assets/css/About.css"
-
+import 'mapbox-gl/dist/mapbox-gl.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

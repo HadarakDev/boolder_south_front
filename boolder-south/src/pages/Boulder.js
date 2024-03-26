@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Container, Typography, Card } from '@mui/material';
 
 function Boulder() {
-  const { name_searchable, id } = useParams();
+  const { area_name_searchable, name_searchable, id } = useParams();
   const [problem, setProblem] = useState(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function Boulder() {
   const imageStyle = {
     width: '100%',
     height: '100%',
-    objectFit: 'cover',
+    // objectFit: 'cover',
   };
   return (
     <Container maxWidth="lg" disableGutters>
@@ -44,7 +44,7 @@ function Boulder() {
         </Typography>
 
         <Card style={cardStyle}>
-          <img src={`../../assets/placeholder.png`}  style={imageStyle} />
+          <img src={`../../assets/${area_name_searchable}/${problem.name_searchable}.png`}  style={imageStyle} />
         </Card>
         <Typography  className="boulder-description" component="div">
           {problem.description}

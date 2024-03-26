@@ -5,7 +5,7 @@ import CarrouselAreas  from '../components/Carrousel';
 const Home = () => {
   return (
     <div>
-        <Banner title_start={"Bouldering in"} title_end={"South of France"}></Banner>
+        <Banner title_start={"Blocs dans"} title_end={"le Sud de France"}></Banner>
         <CarrouselAreas></CarrouselAreas>
     </div>
   );
