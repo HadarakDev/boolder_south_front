@@ -1,0 +1,1 @@
+docker build -t boolder_south_front:`cat VERSION` .
