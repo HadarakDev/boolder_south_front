@@ -99,21 +99,28 @@ const Area = () => {
                   to={`/${area.name_searchable}/${problem.name_searchable}/${problem.id}`}
                   key={problem.id}
                 >
+                  
                     <div className="boulder-row">
+                    <div className="boulder-column">
+                        <CircleComponent problem={problem} />
+                      </div>
                       <div className="boulder-column">
                         <p>{problem.name}</p>
                       </div>
-                      <div className="boulder-column-description">
-                        <p>{problem.description}</p>
-                      </div>
+                      {window.innerWidth >= 480 && ( // Conditionally render description based on width
+                        <div className="boulder-column-description">
+                          <p>{problem.description}</p>
+                        </div>
+                      )}
+                      {window.innerWidth >= 480 && ( // Conditionally render description based on width
+                        <div className="boulder-column">
+                          <p>{problem.sub_area_name}</p>
+                        </div>
+                      )}
+
+
                       <div className="boulder-column">
                         <p>{problem.grade}</p>
-                      </div>
-                      <div className="boulder-column">
-                        <p>{problem.sub_area_name}</p>
-                      </div>
-                      <div className="boulder-column">
-                        <CircleComponent problem={problem} />
                       </div>
                     </div>
                   </Link>

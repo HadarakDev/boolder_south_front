@@ -1,3 +1,5 @@
+
+
 .banner-background{
   background-color: #FFFFFF;
 
@@ -31,4 +33,21 @@
   flex-direction: column;
   justify-content: center;
   height: 100%; /* Set height to 100% to fill the entire height of the parent Grid item */
+}
+
+@media (max-width: 480px) {
+  .banner-title {
+    /* font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;  */
+    font-weight: 800 !important;
+    font-size: 48px !important;
+    line-height: 48px !important;
+     
+  }
+  .banner-sub-title {
+    /* font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;  */
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: #6b7280 !important;
+  
+  }
 }

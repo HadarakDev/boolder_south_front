@@ -42,9 +42,10 @@
   color: #000000;
   font-size: 14px;
   font-weight: 400;
-  padding-left: 40px;
-  
+  padding-left: 40px; 
 }
+
+
 
 .boulder-column-description {
   flex: 4;
@@ -90,4 +91,17 @@
   border-radius: 4px;
 }
 
-
+@media (max-width: 480px) {
+  .boulder-column {
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  .boulder-column-description {
+    /* flex: 4;
+    box-sizing: border-box;
+    color: #000000; */
+    font-size: 10px;
+    font-weight: 400;
+    /* padding-left: 40px;  */
+  }
+}

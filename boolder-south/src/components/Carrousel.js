@@ -55,7 +55,7 @@ function CarrouselAreas() {
 
         <div className='card-container'>
           {areas.map((area) => (
-            <Link className="link" to={`/area/${area.name_searchable}`}>
+            <Link className="link-area" to={`/area/${area.name_searchable}`}>
               <Card style={cardStyle}>
                 <img src={`assets/${area.name_searchable}.png`} alt={area.name} style={imageStyle} />
                 <CardContent style={textOverlayStyle}>

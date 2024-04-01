@@ -36,10 +36,13 @@
   text-decoration: none;
 }
 
-/* .link:hover .cardTitle {
-  background-color: rgb(224, 228, 228);
+.link-area {
+  text-decoration: none;
 }
 
-.link:hover .cardDescription {
-  background-color:rgb(16, 62, 62);
-} */
+
+@media (max-width: 480px) {
+  .link-area {
+    margin-bottom: 20px;
+  }
+}
