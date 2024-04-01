@@ -49,14 +49,14 @@ const Area = () => {
     const fetchData = async () => {
       try {
         // Fetch area information from the first endpoint
-        const areaResponse = await fetch(`http://localhost:3003/area/name_searchable/${id}`);
+        const areaResponse = await fetch(`https://south-crag-backend.hadarak.com/area/name_searchable/${id}`);
         const areaData = await areaResponse.json();
 
         // Extract area_id from the first response
         const areaId = areaData.id;
 
         // Use area_id in the second API call
-        const problemsResponse = await fetch(`http://localhost:3003/problem/problems/${areaId}`);
+        const problemsResponse = await fetch(`https://south-crag-backend.hadarak.com/problem/problems/${areaId}`);
         const problemsData = await problemsResponse.json();
 
         setArea(areaData);

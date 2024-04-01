@@ -10,7 +10,7 @@ function Boulder() {
     const fetchData = async () => {
       try {
         // Fetch area information from the first endpoint
-        const problemResponse = await fetch(`http://localhost:3003/problem/${id}`);
+        const problemResponse = await fetch(`https://south-crag-backend.hadarak.com/problem/${id}`);
         const problemData = await problemResponse.json();
         setProblem(problemData);
       }
