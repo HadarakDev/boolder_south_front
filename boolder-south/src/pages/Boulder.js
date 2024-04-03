@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, Card } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Boulder() {
-  const { area_name_searchable, name_searchable, id } = useParams();
+  const { area_name_searchable, id } = useParams();
   const [problem, setProblem] = useState(null);
 
   useEffect(() => {
@@ -22,17 +23,18 @@ function Boulder() {
   fetchData();
 }, [id]);
 
-  const cardStyle = {
-    position: 'relative',
-    height: '600px',
-    width: '800px', // Set the desired height
-  };
+const cardStyle = {
+  position: 'relative',
+  height: '600px',
+  width: '800px', // Set the desired height
+};
 
-  const imageStyle = {
-    width: '100%',
-    height: '100%',
-    // objectFit: 'cover',
-  };
+const imageStyle = {
+  width: '100%',
+  height: '100%',
+  // objectFit: 'cover',
+};
+
   return (
     <Container maxWidth="lg" disableGutters>
       {problem && (
@@ -42,13 +44,21 @@ function Boulder() {
           {problem.name}
           <div className='boulder-grade'>{problem.grade}</div>
         </Typography>
-
-        <Card style={cardStyle}>
-          <img src={`../../assets/${area_name_searchable}/${problem.name_searchable}.png`}  style={imageStyle} />
-        </Card>
+        <Link
+            className="back-link"
+            to={`/area/${area_name_searchable}/`}
+          >
+            Back to {area_name_searchable}
+          </Link>
+        <div className='boulder-card'>
+        {/* <Card className='boulder-card-style'> */}
+          <img src={`../../assets/${area_name_searchable}/${problem.name_searchable}.png`} alt="Boolder Image" style={imageStyle} className="boulder-image-style" />
+        {/* </Card> */}
+        </div>
         <Typography  className="boulder-description" component="div">
           {problem.description}
         </Typography>
+
         </div>
         </>
         

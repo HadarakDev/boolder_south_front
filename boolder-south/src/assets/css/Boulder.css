@@ -13,3 +13,18 @@
   float: right;
   color: rgb(107, 114, 128)
 }
+
+
+.boulder-card {
+  position: relative;
+  max-width: 800px;
+  height: 600px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+@media (max-width: 390px) {
+  .boulder-card {
+    height: auto;
+  }
+}

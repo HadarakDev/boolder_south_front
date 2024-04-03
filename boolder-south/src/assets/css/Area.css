@@ -36,7 +36,8 @@
  background: #FFFFFF;
 }
 
-.boulder-column {
+.boulder-column, .boulder-column-circuit, .boulder-column-name
+{
   flex: 1;
   box-sizing: border-box;
   color: #000000;
@@ -44,7 +45,6 @@
   font-weight: 400;
   padding-left: 40px; 
 }
-
 
 
 .boulder-column-description {
@@ -91,10 +91,31 @@
   border-radius: 4px;
 }
 
-@media (max-width: 480px) {
-  .boulder-column {
+
+
+.boulder-image-style {
+  width: 100%;
+  height: 100%;
+};
+
+.boulder-card {
+  position: relative;
+  max-width: 800px;
+  height: 600px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+@media (max-width: 390px) {
+  .boulder-column-circuit {
     padding-left: 0px;
     font-size: 12px;
+  }
+
+  .boulder-column-name {
+    padding-left: 0px;
+    font-size: 12px;
+    flex: 3;
   }
   .boulder-column-description {
     /* flex: 4;
@@ -105,3 +126,20 @@
     /* padding-left: 40px;  */
   }
 }
+
+.back-link {
+  color: #374151;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.back-link:hover {
+  color: #C56844;
+
+}
+  
+
+
+
+
+

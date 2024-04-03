@@ -80,7 +80,7 @@ const Area = () => {
     <Container maxWidth="lg" disableGutters>
       {area && (
         <>
-          <OverlapMediaCard img={`../assets/${area.name_searchable}.png`} title={area.name} />
+          <OverlapMediaCard img={`../../assets/${area.name_searchable}.png`} title={area.name} />
           <div className='area-description'>{area.description_en}</div>
             <Typography className="about-title" component="div">
             📍 Localisation
@@ -101,10 +101,10 @@ const Area = () => {
                 >
                   
                     <div className="boulder-row">
-                    <div className="boulder-column">
+                    <div className="boulder-column-circuit">
                         <CircleComponent problem={problem} />
                       </div>
-                      <div className="boulder-column">
+                      <div className="boulder-column-name">
                         <p>{problem.name}</p>
                       </div>
                       {window.innerWidth >= 480 && ( // Conditionally render description based on width
