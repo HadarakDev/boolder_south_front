@@ -57,7 +57,7 @@ function CarrouselAreas() {
           {areas.map((area) => (
             <Link className="link-area" to={`/area/${area.name_searchable}`}>
               <Card style={cardStyle}>
-                <img src={`assets/${area.name_searchable}.png`} alt={area.name} style={imageStyle} />
+                <img src={`assets/${area.name_searchable}-low.png`} alt={area.name} style={imageStyle} />
                 <CardContent style={textOverlayStyle}>
                   <Typography className="media-card-title-small" variant="h5">{area.name.toUpperCase()}</Typography>
                 </CardContent>
