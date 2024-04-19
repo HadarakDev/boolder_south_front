@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
 import OverlapMediaCard from '../components/OverlapMediaCard';
 import grades_order from "../data/grade.json";
 import MapBox from '../components/MapBox';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const groupProblemsByGrade = (problems) => {
   return problems.reduce((acc, problem) => {
@@ -44,6 +44,8 @@ const Area = () => {
   const [area, setArea] = useState(null);
   const [groupedProblems, setGroupedProblems] = useState({});
   const { id } = useParams();
+
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -94,12 +96,14 @@ const Area = () => {
               <div className="grade-header" key={grade}>
                 <h4>{`${grade}`}</h4>
                 {groupedProblems[grade].map((problem) => (
-                  <Link
+                
+                <Link
                   className="link"
                   to={`/${area.name_searchable}/${problem.name_searchable}/${problem.id}`}
                   key={problem.id}
-                >
                   
+                >
+                    <div id={problem.name_searchable}></div>
                     <div className="boulder-row">
                     <div className="boulder-column-circuit">
                         <CircleComponent problem={problem} />

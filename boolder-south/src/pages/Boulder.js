@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Typography, Card } from '@mui/material';
-import { Link } from 'react-router-dom';
-
+import { HashLink as Link } from 'react-router-hash-link';
 function Boulder() {
   const { area_name_searchable, id } = useParams();
   const [problem, setProblem] = useState(null);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,12 +44,21 @@ const imageStyle = {
           {problem.name}
           <div className='boulder-grade'>{problem.grade}</div>
         </Typography>
-        <Link
+        {/* <Link
             className="back-link"
             to={`/area/${area_name_searchable}/`}
           >
             Back to {area_name_searchable}
+          </Link> */}
+        <Link
+            className="back-link"
+            to={`/area/${area_name_searchable}/#${problem.name_searchable}`}
+          >
+            Back to {area_name_searchable}
           </Link>
+        {/* <div id={problem.name_searchable}>
+          <p>Linked to here</p>
+        </div> */}
         <div className='boulder-card'>
         {/* <Card className='boulder-card-style'> */}
           <img src={`../../assets/${area_name_searchable}/${problem.name_searchable}.png`} alt="Boolder Image" style={imageStyle} className="boulder-image-style" />
